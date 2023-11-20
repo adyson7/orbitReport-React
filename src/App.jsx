@@ -7,7 +7,7 @@ import Buttons from "./components/Buttons";
 import Table from "./components/Table";
 
 // imports satellite data
-import satData from "./satData";
+import satData from "./components/satData";
 
 // defines the main App component
 function App() {
@@ -47,4 +47,5 @@ function App() {
 
 // exports the App component as the default export of this module
 export default App;
+
 

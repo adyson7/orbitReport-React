@@ -18,17 +18,17 @@ const Table = ({ sat }) => {
       </thead>
       <tbody>
         {/* Map over the sat array to create rows for each satellite's data */}
-        {sat.map((data, id) => (
+        {sat.map((data, id) => {
           // Table row for a specific satellite, with a unique key
-          <tr key={id}>
-            {/* Table cells that contain satellite data */}
-            <td>{data.name}</td>
-            <td>{data.type}</td>
-            <td>{data.launchDate}</td>
-            {/* displays "Active" if the satellite is operational, otherwise "Inactive" */}
-            <td>{data.operational ? "Active" : "Inactive"}</td>
-          </tr>
-        ))}
+          return (
+            <tr key={id}>
+              <td>{data.name}</td>
+              <td>{data.type}</td>
+              <td>{data.launchDate}</td>
+              <td>{data.operational ? "Active" : "Inactive"}</td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
@@ -38,5 +38,5 @@ const Table = ({ sat }) => {
 export default Table;
 
 
-export default Table;
+
 
