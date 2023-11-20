@@ -1,6 +1,6 @@
 // imports the React library and the satData module
 import React from "react";
-import satData from "./components/satData";
+import satData from "../components/satData";
 
 // defines a function component: Buttons
 const Buttons = ({ filterByType, setSat, displaySats }) => {
